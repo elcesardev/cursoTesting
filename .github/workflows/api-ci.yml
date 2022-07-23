@@ -12,7 +12,7 @@ on:
 
 defaults:
   run:
-    working-directory: ../../examples/api
+    working-directory: ./api
 
 jobs:
   unit-test:
@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 14
           cache: 'npm'
-          cache-dependency-path: ../../examples/api/package-lock
+          cache-dependency-path: ./api/package-lock
       - name: install
         shell: bash
         run: npm ci
