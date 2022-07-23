@@ -24,8 +24,8 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 14
-          #cache: 'npm'
-          #cache-dependency-path: ./examples/api/package-lock.json
+          cache: 'npm'
+          cache-dependency-path: ./examples/api/package-lock.json
       - name: install
         shell: bash
         run: npm ci
