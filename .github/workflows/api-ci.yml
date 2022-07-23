@@ -5,6 +5,9 @@ on:
     paths:
       - "../../examples/api/**"
       - "../../.github/workflows/api-ci.yml"
+      - "./api/**"
+      - ".github/workflows/api-ci.yml"
+
 
 
 defaults:
